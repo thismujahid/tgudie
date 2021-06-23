@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحساب</title>
+    <link rel="icon" href="imgs/logo.svg" type="image/svg" sizes="50x50">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="main-container">
+            <!-- WebSite LOGO -->
+            <div class="logo mobileNone">
+                <img src="./imgs/logo.svg" alt="Traveler Guide Logo">
+            </div>
+            <!-- End WebSite LOGO -->
+            <!-- Mobile Btns (Profile And Nav Menu Open) -->
+            <div class="mobileBtns">
+                <div class="open">
+                    <i class="fal fa-bars" id="iconCloser"></i>
+                </div>
+                <div class="profile prof-mobile">
+                    <a href="profile.html"><i class="fas fa-user    "></i></a>
+                </div>
+            </div>
+            <!-- End Mobile Btns (Profile And Nav Menu Open) -->
+            <!-- start Search Box and Navigator -->
+            <div class="search">
+                <!-- Search Form -->
+                <form action="" method="GET">
+                    <div class="custom-input">
+                        <input type="search" name="search" id="search" placeholder="بحث">
+                        <input type="submit" value="" id="submitSearchBtn">
+                        <label for="submitSearchBtn"><i class="fas fa-search"></i></label>
+                    </div>
+                    <div class="custom-input">
+                        <select name="cities" id="cities" id="selectCity">
+                            <option value="" selected disabled>المدينة </option>
+                            <option value="ryiad">الرياض</option>
+                            <option value="no">الرياض</option>
+                            <option value="ryiad">الرياض</option>
+                            <option value="goge">الرياض</option>
+                        </select>
+                        <label for="selectCity"><img src="./imgs/saicon.svg" alt="SA Flag"></label>
+                    </div>
+                </form>
+                <!-- Search Form -->
+                <!-- Navigation Bar -->
+                <nav class="mobileNone">
+                    <ul>
+                        <li><a href="index.html"><i class="fal fa-home    "></i> الصفحة الرئيسية</a></li>
+                        <li><a href="./activetes.html"><i class="fal fa-plane-departure"></i> الأنشطة</a></li>
+                        <li><a href="./about.html"><i class="fal fa-address-card"></i> نبذة عنا</a></li>
+                        <li><a href="./login.html"><i class="fal fa-sign-in-alt"></i>تسجيل الدخول</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end Search Box and Navigator -->
+            <div class="profile mobileNone">
+                <a href="profile.html"><i class="fas fa-user    "></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- start Mobile Menu -->
+    <div class="overlay"></div>
+    <div class="mobile-nav">
+        <div class="open">
+            <i class="fal fa-bars" id="iconCloser"></i>
+        </div>
+        <div class="logo">
+            <a href="index.html"> <img src="./imgs/logo.svg" alt="Traveler Guide Logo"> </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fal fa-home    "></i> الصفحة الرئيسية</a></li>
+                <li><a href="./activetes.html"><i class="fal fa-plane-departure"></i> الأنشطة</a></li>
+                <li><a href="./about.html"><i class="fal fa-address-card"></i> نبذة عنا</a></li>
+                <li><a href="./login.html"><i class="fal fa-sign-in-alt"></i>  تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Mobile Menu -->
+    <!-- Start Content -->
+    <div class="main-container">
+        <section class="profile-content">
+            <div class="profile-tabs">
+                <div>
+                    <ul>
+                        <li><a class="active" href="#"><i class="fas fa-user"></i>الملف الشخصي</a></li>
+                        <li><a href="#"><i class="fas fa-ticket-alt"></i>التذاكر</a></li>
+                        <li><a href="#" id="details"><i class="fas fa-info-circle"></i>التفاصيل</a></li>
+                        <li><a href="#" id="contacts"><i class="fas fa-address-book"></i>جهات الاتصال</a></li>
+                        <li><a href="#" id="password"><i class="fas fa-key"></i>تغيير كلمة المرور</a></li>
+                        <li><a href="./login.html" id="logout"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tabs-content">
+                <div class="profile tab active" id="profile">
+                    <h4>الملف الشخصي</h4>
+                    <div class="details">
+                        <div class="head">
+                            <span>تفاصيل الحساب</span><span><i class="fas fa-edit edit-profile"></i></span>
+                        </div>
+                        <div class="line">
+                            <span>محمد محمود مصطفي السيد</span>
+                        </div>
+                        <div class="line">
+                            <span>Test_test@test.com</span>
+                        </div>
+                        <div class="line">
+                            <span>النوع: ذكر</span>
+                        </div>
+                        <div class="line">
+                            <span>تاريخ الميلاد: 30/12/1998</span>
+                        </div>
+                        <div class="change-password">
+                            <span>تغيير كلمة المرور</span> <span><i class="fas fa-edit edit-password"></i></span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="head">
+                            <span>جهات الأتصال</span><span><i class="fas fa-edit edit-contacts"></i></span>
+                        </div>
+                        <div class="line">
+                            <p>العنوان تفصيلا</p>
+                            <p>966 110 52200 50+</p>
+                        </div>
+                        <div class="line">
+                            <p>العنوان تفصيلا</p>
+                            <p>966 110 52200 50+</p>
+                        </div>
+                        <div class="line">
+                            <p>العنوان تفصيلا</p>
+                            <p>966 110 52200 50+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tickets tab" id="tickets">
+                    <h4>التذاكر</h4>
+                    <div class="details">
+                        <div class="line">
+                            <span><a href="./payOk.html">رقم التذكره</a></span> <span>قيد التشغيل</span>
+                        </div>
+                        <div class="line">
+                            <span><a href="./payOk.html">رقم التذكره</a></span> <span>قيد الايقاف</span>
+                        </div>
+                        <div class="line">
+                            <span><a href="./payOk.html">رقم التذكره</a></span> <span>قيد الايقاف</span>
+                        </div>
+                        <div class="line">
+                            <span><a href="./payOk.html">رقم التذكره</a></span> <span>قيد الايقاف</span>
+                        </div>
+                        <div class="line">
+                            <span><a href="./payOk.html">رقم التذكره</a></span> <span>قيد الايقاف</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit-details tab" id="edit-details">
+                    <h4>تعديل تفاصيل الحساب</h4>
+                    <div class="details">
+                        <form action="">
+                            <input type="text" name="username" placeholder="ألاسم">
+                            <input type="email" name="email" placeholder="البريد الالكتروني">
+                            <input type="number" name="phone" placeholder="رقم الجوال">
+                            <div class="custom-input">
+                                <input type="date" name="birth-date" id="birthDate" placeholder="تاريخ الميلاد">
+                                <label for="birthDate">تاريخ الميلاد</label>
+                            </div>
+                            <select name="gender">
+                                <option disabled selected>النوع</option>
+                                <option value="ذكر">ذكر</option>
+                                <option value="انثي">انثي</option>
+                            </select>
+                            <div class="submitBtn">
+                                <input type="submit" value="حفظ">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contacts tab" id="contacts-tab">
+                    <h4>العناوين</h4>
+                    <div class="details">
+                        <div class="line">
+                            <p>العنوان تفصيلا</p>
+                            <p>966 110 52200 50+</p>
+                        </div>
+                        <div class="line">
+                            <p>العنوان تفصيلا</p>
+                            <p>966 110 52200 50+</p>
+                        </div>
+                        <div class="line">
+                            <p>العنوان تفصيلا</p>
+                            <p>966 110 52200 50+</p>
+                        </div>
+                        <div class="head">
+                            <span><a href="#">إضافة عنوان اخر</a></span> <span><i class="fas fa-edit edit-data"></i></span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="change-password tab" id="change-password">
+                    <h4>تغيير كلمة المرور</h4>
+                    <div class="details">
+                        <form action="">
+                            <div class="custom-input">
+                                <input type="password" name="curent-password" placeholder="كلمة المرور الحالية">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </div>
+                            <div class="custom-input">
+                                <input type="password" name="new-password" placeholder="كلمة المرور الجديدة">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </div>
+                            <div class="custom-input">
+                                <input type="password" name="confirm-new-password" placeholder="تأكيد كلمة المرور الجديدة">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </div>
+                            <div class="submitBtn">
+                                <input type="submit" value="تغيير كلمة المرور">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End Content -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="main-container">
+
+            <div class="logo">
+                <a href="index.html"> <img src="./imgs/logo.svg" alt="Traveler Guide Logo"> </a>
+            </div>
+            <div class="about">
+                <h3>نبذه عنا</h3>
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والاحكام</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>اتصل بنا</h3>
+                <ul>
+                    <li><a href="#">اتصل بنا</a></li>
+                    <li>روابط السوشيال ميديا:
+                    </li>
+                    <li>
+                        <a href="https:www.fb.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https:www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https:www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https:www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="authentication-official-store">
+                <p>توثيق المصدر الرسمي:
+                    <br>
+                    <a href="http://maroof.sa/Business/GetStamp?bid=196287" target="_blank">"http://maroof.sa/Business"</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

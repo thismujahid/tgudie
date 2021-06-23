@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل النشاط</title>
+    <link rel="icon" href="imgs/logo.svg" type="image/svg" sizes="50x50">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="main-container">
+
+            <!-- <div class="container"> -->
+            <!-- WebSite LOGO -->
+            <div class="logo mobileNone">
+                <img src="./imgs/logo.svg" alt="Traveler Guide Logo">
+            </div>
+            <!-- End WebSite LOGO -->
+            <!-- Mobile Btns (Profile And Nav Menu Open) -->
+            <div class="mobileBtns">
+                <div class="open">
+                    <i class="fal fa-bars" id="iconCloser"></i>
+                </div>
+                <div class="profile prof-mobile">
+                    <a href="profile.html"><i class="fas fa-user    "></i></a>
+                </div>
+            </div>
+            <!-- End Mobile Btns (Profile And Nav Menu Open) -->
+            <!-- start Search Box and Navigator -->
+            <div class="search">
+                <!-- Search Form -->
+                <form action="" method="GET">
+                    <div class="custom-input">
+                        <input type="search" name="search" id="search" placeholder="بحث">
+                        <input type="submit" value="" id="submitSearchBtn">
+                        <label for="submitSearchBtn"><i class="fas fa-search"></i></label>
+                    </div>
+                    <div class="custom-input">
+                        <select name="cities" id="cities" id="selectCity">
+                            <option value="" selected disabled>المدينة </option>
+                            <option value="ryiad">الرياض</option>
+                            <option value="no">الرياض</option>
+                            <option value="ryiad">الرياض</option>
+                            <option value="goge">الرياض</option>
+                        </select>
+                        <label for="selectCity"><img src="./imgs/saicon.svg" alt="SA Flag"></label>
+                    </div>
+                </form>
+                <!-- Search Form -->
+                <!-- Navigation Bar -->
+                <nav class="mobileNone">
+                    <ul>
+                        <li><a href="index.html"><i class="fal fa-home    "></i> الصفحة الرئيسية</a></li>
+                        <li class="active"><a href="./activetes.html"><i class="fal fa-plane-departure"></i> الأنشطة</a></li>
+                        <li><a href="./about.html"><i class="fal fa-address-card"></i> نبذة عنا</a></li>
+                        <li><a href="./login.html"><i class="fal fa-sign-in-alt"></i>تسجيل الدخول</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end Search Box and Navigator -->
+            <div class="profile mobileNone">
+                <a href="profile.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+        <!-- Image Under Header -->
+        <div class="head-img">
+            <img src="./imgs/party.jpg" alt="">
+        </div>
+        <!-- Image Under Header -->
+    </header>
+    <!-- End Header -->
+    <!-- start Mobile Menu -->
+    <div class="overlay"></div>
+    <div class="mobile-nav">
+        <div class="logo">
+            <a href="index.html"> <img src="./imgs/logo.svg" alt="Traveler Guide Logo"> </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fal fa-home    "></i> الصفحة الرئيسية</a></li>
+                <li class="active"><a href="./activetes.html"><i class="fal fa-plane-departure"></i> الأنشطة</a></li>
+                <li><a href="./about.html"><i class="fal fa-address-card"></i> نبذة عنا</a></li>
+                <li><a href="./login.html"><i class="fal fa-sign-in-alt"></i>  تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Header -->
+    <!-- Start Content -->
+    <div class="main-container">
+        <section class="party-details">
+            <div class="main-con">
+                <div class="teckit-info">
+                    <div class="title">سعر التذكرة</div>
+                    <div class="price">SAR<span>500</span></div>
+                    <div class="price">خلال <span>60</span> يوم</div>
+                    <div class="pay-ticket"><a href="./ticket.html">شراء التذكرة <i class="fas fa-chevron-left"></i></a></div>
+                </div>
+                <div class="party-info">
+                    <div class="featuers">
+                        <div class="feat">
+                            <img src="./imgs/coffe.svg" alt="Eat and Drinks">
+                            <span>توفير الاطعمة والمشروبات</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/cam.svg" alt="Photographing Allow">
+                            <span>مسموح التصوير</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/wether.svg" alt="In Out">
+                            <span>في الخارج</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/age+4.svg" alt="allowed Age">
+                            <span>العمر المسموح به للدخول</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/card.svg" alt="Card Wanted">
+                            <span>مطلوب احضار هوية المشارك</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/nopay.svg" alt="Disallow Tickets In Entry">
+                            <span>لا تباع التذاكر عند الدخول</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/elcterc-card.svg" alt="Online Ticket">
+                            <span>تذكرة الكترونية</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/forall.svg" alt="For All">
+                            <span>مسموح دخول جميع الفئات العمرية</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/chare.svg" alt="Chare For All">
+                            <span>المقاعد متوفرة</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/assitant.svg" alt="Have Assistant">
+                            <span>وجود مرشد سياحي</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/car.svg" alt="Have Car For Driving">
+                            <span>المواصلات متاحة</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/protect.svg" alt="Health Protect">
+                            <span>تطبق إجراءات السلامة العامة</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/pic allow.svg" alt="phone Use Allowed">
+                            <span>مسموح التصوير بالموبايل</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/far.svg" alt="Physical distancing">
+                            <i class="fas fa-arrows-alt-h" style="color:#FAB753 ;"></i>
+                            <img src="./imgs/far2.svg" alt="Physical distancing">
+                            <span>التباعد الجسدي</span>
+                        </div>
+                        <div class="feat">
+                            <img src="./imgs/check.svg" alt="Check the temperature">
+                            <span>فحص درجات الحرارة</span>
+                        </div>
+                    </div>
+                    <div class="photo-galary">
+                        <h4>استدوديو الصور</h4>
+                        <img src="./imgs/post (3).jpg" alt="Photo">
+                        <img src="./imgs/post (4).jpg" alt="Photo">
+                        <img src="./imgs/post (2).jpg" alt="Photo">
+                    </div>
+                    <div class="more-info">
+                        <h4>مزيد من المعلومات</h4>
+                        <p>
+                            الرحلات البرية و السفاري هي تخصصنا حيث يمكنك تصميم رحلتك وفقًا لتفضيلاتك ومع الخدمات الأكثر ملاءمة و الرفاهية التي تحتاجها. لدينا مجموعة متنوعة من البرامج بما في ذلك رحلات السفاري والاستكشاف والتسلق والتزلج على الرمال والعديد من البرامج الأخرى التي ستضمن
+                            لك تجربة الثقافة والتراث و جمال الطبيعة الخلابة بالسعودية
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <h4>التعليقات</h4>
+            <div class="comments">
+                <form action="comments.php" method="GET">
+                    <div class="icon">
+                        <img src="./imgs/comment.svg" alt="">
+                    </div>
+                    <div class="comment-input">
+                        <label for="comment">أضف تعليق</label>
+                        <textarea name="comment" id="commentInput"></textarea>
+                        <div class="err"></div>
+                        <input type="submit" value="إرسال" id="commentSend">
+                        <div class="fix"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- End Content -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="main-container">
+            <div class="logo">
+                <a href="index.html"> <img src="./imgs/logo.svg" alt="Traveler Guide Logo"> </a>
+            </div>
+            <div class="about">
+                <h3>نبذه عنا</h3>
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والاحكام</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>اتصل بنا</h3>
+                <ul>
+                    <li><a href="#">اتصل بنا</a></li>
+                    <li>روابط السوشيال ميديا:
+                    </li>
+                    <li>
+                        <a href="https:www.fb.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https:www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https:www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https:www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="authentication-official-store">
+                <p>توثيق المصدر الرسمي:
+                    <br>
+                    <a href="http://maroof.sa/Business/GetStamp?bid=196287" target="_blank">"http://maroof.sa/Business"</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
